@@ -1,0 +1,48 @@
+﻿<Page
+    x:Class="CeskeZpravodajstvi.Pages.HelpTipsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CeskeZpravodajstvi.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Padding="12">
+        <ScrollViewer>
+            <StackPanel>
+                <TextBlock Text="Nápověda+Tipy" Style="{ThemeResource SubtitleTextBlockStyle}" />
+
+                <StackPanel Orientation="Horizontal" Margin="0, 10, 0, 0">
+                    <TextBlock Text="&#xE8F1;" Foreground="{ThemeResource SystemControlBackgroundAccentBrush}" FontFamily="Segoe MDL2 Assets" FontSize="18" Margin="0, 0, 7, 0" VerticalAlignment="Center" />
+                    <TextBlock Foreground="{ThemeResource SystemControlBackgroundAccentBrush}" FontSize="18">První spuštění</TextBlock>
+                </StackPanel>
+                <TextBlock TextWrapping="WrapWholeWords">Při prvním spuštění aplikace musí být vaše zařízení připojeno k internetu. Aplikace sama o sobě neobsahuje žádný obsah, proto je nutné ho nejprve stáhnout.</TextBlock>
+
+                <StackPanel Orientation="Horizontal" Margin="0, 10, 0, 0">
+                    <TextBlock Text="&#xE905;" Foreground="{ThemeResource SystemControlBackgroundAccentBrush}" FontFamily="Segoe MDL2 Assets" FontSize="18" Margin="0, 0, 8, 0" VerticalAlignment="Center" />
+                    <TextBlock Foreground="{ThemeResource SystemControlBackgroundAccentBrush}" FontSize="18">Čtení offline</TextBlock>
+                </StackPanel>
+                <TextBlock TextWrapping="WrapWholeWords">Stažený obsah zůstává automaticky dostupný i v místech, kde není dostupné internetové připojení. Můžete si tak užívat obsah třeba v metru nebo na místech bez pokrytí mobilním signálem.</TextBlock>
+
+                <StackPanel Orientation="Horizontal" Margin="0, 10, 0, 0">
+                    <TextBlock Text="&#xE770;" Foreground="{ThemeResource SystemControlBackgroundAccentBrush}" FontFamily="Segoe MDL2 Assets" FontSize="18" Margin="0, 0, 8, 0" VerticalAlignment="Center" />
+                    <TextBlock Foreground="{ThemeResource SystemControlBackgroundAccentBrush}" FontSize="18">Instalace na více zařízení</TextBlock>
+                </StackPanel>
+                <TextBlock TextWrapping="WrapWholeWords">Aplikace je vytvořena jako tzv. univerzální aplikace. To znamená, že ji lze spustit na smartphonech, tabletech i běžných počítačích. Na všech těchto zařízeních Vám nabídne stejné chování i funkce, na které jste zvyklí.</TextBlock>
+
+                <StackPanel Orientation="Horizontal" Margin="0, 10, 0, 0">
+                    <TextBlock Text="&#xE8A1;" Foreground="{ThemeResource SystemControlBackgroundAccentBrush}" FontFamily="Segoe MDL2 Assets" FontSize="18" Margin="0, 0, 8, 0" VerticalAlignment="Center" />
+                    <TextBlock Foreground="{ThemeResource SystemControlBackgroundAccentBrush}" FontSize="18">Přidání nového zdroje zpráv</TextBlock>
+                </StackPanel>
+                <TextBlock TextWrapping="WrapWholeWords">Přidávání vlastních zdrojů není bohužel možné. Je to způsobeno tím, že aplikace České zpravodajství nefunguje jako běžná RSS čtečka, ale z RSS kanálu vyhledá pouze odkazy na obsažené články a ty pak stahuje jednotlivě. Díky tomu si můžete přímo v aplikaci přečíst celé články a ne jen úryvek jako u ostatních RSS čteček. Problém je, že každý zpravodajský portál má jinou strukturu dat, proto musím vždy jejich stahování uzpůsobit konkrétnímu poskytovateli.</TextBlock>
+                <TextBlock TextWrapping="WrapWholeWords" FontWeight="Bold">Chcete-li přidat váš oblíbený zdroj zpráv, přidejte svůj návrh do diskuze. Shodne-li se více lidí na stejném zdroji, s potěšením ho do aplikace doplním.</TextBlock>
+
+                <Button x:Name="btnRequestSource" Content="Návrh nového zdroje" Click="btnRequestSource_Click" Margin="0, 15, 0, 0" />
+
+                <TextBlock Text="&#xE006;" FontFamily="Segoe MDL2 Assets" Foreground="Red" FontSize="32" TextAlignment="Center" Margin="0, 20, 0, 10" />
+                <TextBlock TextAlignment="Center" TextWrapping="WrapWholeWords">Jsem moc rád, že jste si zvolil(a) tuto aplikaci. Věřím, že Vám bude dobře sloužit.</TextBlock>
+                <TextBlock TextAlignment="Right" FontSize="14" Opacity="0.5" Margin="0, 0, 0, 20">~ Jan Chalupa</TextBlock>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

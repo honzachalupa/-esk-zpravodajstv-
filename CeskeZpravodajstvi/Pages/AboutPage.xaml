@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="CeskeZpravodajstvi.Pages.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CeskeZpravodajstvi.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Padding="12">
+        <ScrollViewer>
+            <StackPanel>
+                <TextBlock Text="O aplikaci" Style="{ThemeResource SubtitleTextBlockStyle}" />
+                <TextBlock Style="{ThemeResource SubheaderTextBlockStyle}" Foreground="{ThemeResource SystemControlBackgroundAccentBrush}">České zpravodajství</TextBlock>
+
+                <StackPanel Background="{ThemeResource SystemControlBackgroundAccentBrush}" HorizontalAlignment="Left" Margin="0, 15">
+                    <Image Width="180" Height="180" Source="ms-appx:///Assets/Square150x150Logo.png" />
+                </StackPanel>
+                
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Padding="0, 0, 5, 0" Foreground="{ThemeResource SystemControlBackgroundAccentBrush}">Verze:</TextBlock>
+                    <TextBlock x:Name="txtVersion" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Padding="0, 0, 5, 0" Foreground="{ThemeResource SystemControlBackgroundAccentBrush}">Autor:</TextBlock>
+                    <TextBlock>Jan Chalupa</TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Padding="0, 0, 5, 0" Foreground="{ThemeResource SystemControlBackgroundAccentBrush}">Webové stránky:</TextBlock>
+                    <HyperlinkButton Padding="0" Foreground="{ThemeResource AppBarItemForegroundThemeBrush}" NavigateUri="Http://www.honzachalupa.cz/">www.honzachalupa.cz</HyperlinkButton>
+                </StackPanel>                
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="CeskeZpravodajstvi.Pages.RequestSourcePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CeskeZpravodajstvi.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Návrh nového zdroje zpráv" Grid.Row="0" Style="{ThemeResource SubtitleTextBlockStyle}" Padding="12" />
+        <WebView x:Name="wbvExternalSite" Grid.Row="1" />
+    </Grid>
+</Page>
